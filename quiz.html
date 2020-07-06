@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The SIX wives quiz!</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id=whole-page" class="row d-flex justify-content-center">
+        <div id="quiz-container" class="col-md-10">
+            <div class="container-fluid" id="heading">
+                <marquee behavior="scroll" direction="left">
+                    <h1>The SIX wives quiz!</h1>
+                </marquee>
+            </div>
+            <div id="main-image" class="text-center">
+                <img src="six.jpg" class="headerimage" alt="A picture of Henry VIII's six wives, from the musical SIX.">
+            </div>
+            <div>
+
+            </div>
+            <div id="intro" class="text-center">
+                <h2>Divorced, beheaded, died......</h2>
+
+                In 2017 the six wives of Henry VIII took the world by storm in the new musical SIX.<br>
+                Which wife are you? Devoted Catherine of Aragon? Sexy Anne Boleyn? Also sexy Catherine Howard? Perhaps
+                even mysterious and also sexy Mary Catherine?<br>
+                Take this quiz to find out!!!!!!<br>
+                <div id="youtube-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WJbaU4j0JCo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="start-button" class="text-center">
+                <input type="button" value="Start" onclick="showPage1()">
+            </div>
+
+            <div id="question-1" class="hidden" class="questions" class="text-center">
+                <div id="text-1" class="text-center">
+                    <div class="question-divs">
+                        <h2>How do you feel about being sent to live in a nunnery against your will?</h2>
+                    </div>
+
+                    <div id="img-1" class="text-center">
+                        <img src="img-1.jpg" class="images"
+                            alt="A picture of seven nuns in wimples, holding hymn books, standing at a pew.">
+                    </div>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                        <div id="question-text-1" class="answer-list-divs text-left col-10">
+                            <input type="radio" name="q1" value="Answer A" onclick="answerA(); showPage2()"> No way!<br>
+                            <input type="radio" name="q1" value="Answer B" onclick="answerB(); showPage2()"> If I can be
+                            a sexy nun, sure!<br>
+                            <input type="radio" name="q1" value="Answer C" onclick="answerC(); showPage2()"> If that's
+                            what my loving husband wants, of course!<br>
+                            <input type="radio" name="q1" value="Answer D" onclick="answerD(); showPage2()"> Do I still
+                            get to go to court and embarrass the king?<br>
+                            <input type="radio" name="q1" value="Answer E" onclick="answerE(); showPage2()"> I'm like
+                            twelve, I hate it!<br>
+                            <input type="radio" name="q1" value="Answer F" onclick="answerF(); showPage2()"> Only if I
+                            get to teach the nuns to read and write.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-2" class="hidden" class="questions" class="text-center">
+                <div id="text-2" class="text-center">
+                    <div class="question-divs">
+                        <h2>Once you've married Henry VIII, he starts sleeping around with other women.<br> What do you
+                            do?
+                        </h2>
+                    </div>
+                    <div id="img-2" class="text-center">
+                        <img src="img-2.jpg" class="images"
+                            alt="A picture of the &quot;distracted boyfriend&quot; meme, where the boyfriend is labelled &quot;Henry VIII&quot;, the girlfriend is labelled &quot;you&quot;, and the other woman is labelled &quot;Some woman Henry just saw for 2 seconds&quot;.">
+                    </div>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                        <div id="question-text-2" class="answer-list-divs text-left col-10">
+                            <input type="radio" name="q2" value="Answer A" onclick="answerA(); showPage3()"> I take a
+                            deep breath, keep my cool, and say nothing.<br>
+                            <input type="radio" name="q2" value="Answer B" onclick="answerB(); showPage3()"> I
+                            immediately imply that he has erectile dysfunction, even if this leads to me losing my
+                            head.<br>
+                            <input type="radio" name="q2" value="Answer C" onclick="answerC(); showPage3()"> If I can't
+                            make him happy, he can do whatever he wants! I love him too much to stop him!<br>
+                            <input type="radio" name="q2" value="Answer D" onclick="answerD(); showPage3()"> He rejected
+                            me before we got married so now I just live in a palace and do whatever I want all day. Have
+                            fun!<br>
+                            <input type="radio" name="q2" value="Answer E" onclick="answerE(); showPage3()"> Oh no! I
+                            thought he was different from other men!<br>
+                            <input type="radio" name="q2" value="Answer F" onclick="answerF(); showPage3()"> You forced
+                            me to marry you instead of the love of my life for THIS?!<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-3" class="hidden" class="questions" class="text-center">
+                <div id="text-3" class="text-center">
+                    <div class="question-divs">
+                        <h2>When people get married, they usually promise to love each other for ever.<br>But are you
+                            REALLY sure that Henry VIII loves you?</h2>
+                    </div>
+                    <div id="img-3" class="text-center">
+                        <img src="img-3.jpg" class="images"
+                            alt="A drawing of two bananas spooning. The text above reads &quot;I love this peeling&quot; and the text below reads &quot;I go bananas for you&quot;.">
+                    </div>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                        <div id="question-text-3" class="answer-list-divs text-left col-10">
+                            <input type="radio" name="q3" value="Answer A" onclick="answerA(); showPage4()"> After the
+                            first fifteen years he got bored and started sleeping around, so I'll go with no.<br>
+                            <input type="radio" name="q3" value="Answer B" onclick="answerB(); showPage4()"> He did
+                            leave his first wife on me, so I guess so?<br>
+                            <input type="radio" name="q3" value="Answer C" onclick="answerC(); showPage4()"> Yes! I'm
+                            the only one he truly loved!<br>
+                            <input type="radio" name="q3" value="Answer D" onclick="answerD(); showPage4()"> We never
+                            got married but apparently he loves me like a sister, so that's fine.<br>
+                            <input type="radio" name="q3" value="Answer E" onclick="answerE(); showPage4()"> Unlike the
+                            other men who've slept with me, told me they love me, and then dumped me, Henry will definitely love me forever.<br>
+                            <input type="radio" name="q3" value="Answer F" onclick="answerF(); showPage4()"> When you're
+                            a man's sixth wife you're honestly more worried about survival than love.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-4" class="hidden" class="questions" class="text-center">
+                <div id="text-4" class="text-center">
+                    <div class="question-divs">
+                        <h2>After promising to marry you based on your portrait,<br>Henry has rejected you after seeing
+                            you
+                            in the flesh. What do you do?</h2>
+                    </div>
+                    <div id="img-4" class="text-center">
+                        <img src="img-4.jpg" class="images"
+                            alt="A drawing of two stick figures. The left one is holding up a hand, the word REJECTED is projected towards the other stick figure, who has a broken heart.">
+                    </div>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                        <div id="question-text-4" class="answer-list-divs text-left col-10">
+                            <input type="radio" name="q4" value="Answer A" onclick="answerA(); showPage5()"> Pack my
+                            bags, move to a nunnery of my own free will, and start a world-famous gospel choir!<br>
+                            <input type="radio" name="q4" value="Answer B" onclick="answerB(); showPage5()"> I dunno,
+                            probably go dancing and snog some hot guys? #sorrynotsorry<br>
+                            <input type="radio" name="q4" value="Answer C" onclick="answerC(); showPage5()"> But he's my
+                            true love! I'll enact a daring and probably ineffectual scheme to win him back!<br>
+                            <input type="radio" name="q4" value="Answer D" onclick="answerD(); showPage5()"> He can't
+                            risk offending my family, so I'll probably make him give me a palace in Richmond and live
+                            out my days in luxury.<br>
+                            <input type="radio" name="q4" value="Answer E" onclick="answerE(); showPage5()"> Hopefully
+                            this will give me the chance to take some time for myself. I am only like thirteen years
+                            old!<br>
+                            <input type="radio" name="q4" value="Answer F" onclick="answerF(); showPage5()"> I'll go
+                            back to the love of my life, marry him, and probably open a school for illiterate women.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-5" class="hidden" class="questions" class="text-center">
+                <div id="text-5" class="text-center">
+                    <div class="question-divs">
+                        <h2>After marrying Henry, you find yourself overwhelmed with life at court. <br>Luckily, one of
+                            his
+                            courtiers becomes very friendly towards you. What do you do?</h2>
+                    </div>
+                    <div id="img-5" class="text-center">
+                        <img src="img-5.jpg" class="images"
+                            alt="A picture of a man holding a fan in front of his face.">
+                    </div>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                        <div id="question-text-5" class="answer-list-divs text-left col-10">
+                            <input type="radio" name="q5" value="Answer A" onclick="answerA(); showPage6()"> Tell him
+                            that I'm devoted, even to my trash man of a husband, and to stay at least five feet away
+                            from me at all times.<br>
+                            <input type="radio" name="q5" value="Answer B" onclick="answerB(); showPage6()"> I'll show
+                            him exactly why Henry called me Greensleeves!<br>
+                            <input type="radio" name="q5" value="Answer C" onclick="answerC(); showPage6()"> Henry loves
+                            me far too much to leave me overwhelmed at court! I'll physically hold onto my King so he
+                            can never leave my presence!<br>
+                            <input type="radio" name="q5" value="Answer D" onclick="answerD(); showPage6()"> I'll tell
+                            him to get down.<br>
+                            <input type="radio" name="q5" value="Answer E" onclick="answerE(); showPage6()"> All the men I've been with so far have been awful. I'm fourteen though, so I'm sure this guy's intentions are pure! Let's be besties!<br>
+                            <input type="radio" name="q5" value="Answer F" onclick="answerF(); showPage6()"> He isn't
+                            the man I was forced to leave for Henry, so I have no interest in him.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-6" class="hidden" class="questions" class="text-center">
+                <div id="text-6" class="text-center">
+                    <div class="question-divs">
+                        <h2>You're just about to marry the love of your life when Henry VIII appears,<br> and tells you
+                            to
+                            marry him or he'll kill you. What do you do?</h2>
+                    </div>
+                    <div id="img-6" class="text-center">
+                        <img src="img-6.jpg" class="images"
+                            alt="A picture of a plastic horse's head lying on a pillow in a bed.">
+                    </div>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                        <div id="question-text-6" class="answer-list-divs text-left col-10">
+                            <input type="radio" name="q6" value="Answer A" onclick="answerA(); showAnswer()"> Ask God,
+                            then tell Henry that God says no.<br>
+                            <input type="radio" name="q6" value="Answer B" onclick="answerB(); showAnswer()"> I dunno,
+                            maybe get drunk and vom all over him at the altar? #stillsorrynotsorry<br>
+                            <input type="radio" name="q6" value="Answer C" onclick="answerC(); showAnswer()"> Henry is
+                            the love of my life anyway! I willingly accept!<br>
+                            <input type="radio" name="q6" value="Answer D" onclick="answerD(); showAnswer()"> Laugh in
+                            his face as I call my dad, who will threaten to cut all financial ties with England unless
+                            Henry backs off.<br>
+                            <input type="radio" name="q6" value="Answer E" onclick="answerE(); showAnswer()"> As a
+                            teenager who's only ever been treated badly by men, I'm sure Henry knows what's best, so
+                            I'll do as he orders.<br>
+                            <input type="radio" name="q6" value="Answer F" onclick="answerF(); showAnswer()"> Write a
+                            tearful goodbye note to my love, regretfully marry Henry, and then wait for him to die.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="answer-1" class="hidden questions text-center">
+                <h2>You are CATHERINE OF ARAGON!</h2>
+                <br>
+                <div id="img-ans-1">
+                    <img src="img-a1.jpg" class="portraits"
+                        alt="A portrait of Catherine of Aragon, wearing a red dress and gold jewelry.">
+                </div>
+                <br>
+                <div class="row d-flex justify-content-center">
+                    <div id="answer-text-1" class="text-left" class="col">
+                        As Henry's first and longest-serving wife, you're a paragon of royalty. You show faith,
+                        piety, and above all patience when it comes to your husband's wayward dalliances.
+                    </div>
+                </div>
+            </div>
+
+            <div id="answer-2" class="hidden questions text-center">
+                <h2>You are ANNE BOLEYN!</h2>
+                <br>
+                <div id="img-ans2">
+                    <img src="img-a2.jpg" class="portraits"
+                        alt="A portrait of Anne Boleyn, wearing a black dress and pearl jewelry.">
+                </div>
+                Notorious for having inspired the poem Greensleeves, your love of song and merry-making ultimately leads
+                to your downfall after you insult your philandering husband in public. He cuts off your head when you
+                are 35.
+            </div>
+
+            <div id="answer-3" class="hidden questions text-center">
+                <h2>You are JANE SEYMOUR!</h2>
+                <br>
+                <div id="img-ans3">
+                    <img src="img-a3.jpg" class="portraits"
+                        alt="A portrait of Jane Seymour, wearing a mauve dress and pearl jewelry.">
+                </div>
+                You are said to be the wife that Henry loved the most. You manage to give him the son he wanted so
+                badly, but tragically die in childbirth. Your love later inspires Henry to replace his other wives'
+                faces with yours in their portraits.
+            </div>
+
+            <div id="answer-4" class="hidden questions text-center">
+                <h2>You are ANNE OF CLEVES!</h2>
+                <br>
+                <div id="img-ans4">
+                    <img src="img-a4.jpg" class="portraits"
+                        alt="A portrait of Anne of Cleves, wearing a red and gold dress and gold jewelry.">
+                </div>
+                After you are rejected by Henry for not looking like your portrait, you use your political influence to
+                get him to give you a giant palace, and live out your days in luxury.
+            </div>
+
+            <div id="answer-5" class="hidden questions text-center">
+                <h2>You are KATHERINE HOWARD!</h2>
+                <br>
+                <div id="img-ans5">
+                    <img src="img-a5.jpg" class="portraits"
+                        alt="A portrait of Katherine Howard, wearing a black dress and gold pendant.">
+                </div>
+                After being used and abused by men throughout your life for your unrivalled beauty, Henry marries you
+                and does exactly the same thing. When you seek comfort from one of his courtiers, Henry has you exected
+                for infidelity at the age of 17.
+            </div>
+
+            <div id="answer-6" class="hidden questions text-center">
+                <h2>You are CATHERINE PARR!</h2>
+                <br>
+                <div id="img-ans6">
+                    <img src="img-a6.jpg" class="portraits"
+                        alt="A portrait of Catherine Parr, wearing a headdress and gold necklace.">
+                </div>
+                Your engagement to the love of your life is interrupted by Henry, who threatens to kill you unless you
+                marry him. You do, and have to wait four years for him to pop his clogs. Sadly, you die a year and 8
+                months later.
+            </div>
+
+            <div id="answer-7" class="hidden questions text-center">
+                <h2>You are MARY CATHERINE!</h2>
+                <br>
+                <div id="img-ans7">
+                    <img src="img-a7.jpg" class="portraits"
+                        alt="A silhouette representing Mary Catherine. The silhouette wears an ornate earring and fancy neckline.">
+                </div>
+                Little is known about Henry's mysterious seventh wife. <br>Her existence was long dismissed as a hoax, but a
+                cache of
+                secret love letters, along with a marriage certificate, were unearthed in her ancestral home of Dublin
+                in November 2019.
+            </div>
+
+            <div id="back-to-start" class="hidden" style="background-color: blueviolet;">
+                <input type="button" value="Back to the beginnning" onClick="reload()">
+                TEXT FOR THE DIV HWELP
+            </div>
+
+        </div>
+        <!--end of quiz container-->
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+#quiz-container{
+    background-color: black;
+    color: white;
+    height: 1200px;
+    width: 1500px;
+}
+
+#heading{
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: black;
+    margin-top: 10px;
+}
+
+#main-image{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#youtube-embed{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.questions{
+    justify-content: center;
+}
+
+.headerimage{
+    width: 600px;
+    height: 300px;    
+}
+
+.images{
+    width: 600px;
+    height: 400px;
+}
+
+.portraits{
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.question-divs{
+   height: 150px;
+    width: 1261px;
+    margin-top: 10px;
+}
+
